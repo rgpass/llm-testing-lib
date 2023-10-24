@@ -5,9 +5,14 @@
 - Allow for easy testing of LLM calls
 - Speed up tests and save money of LLM calls by storing them in source
 
-## Overview
+## Concepts Applied
 
-Clone this repo, experiment with the values in `index.ts`, then run `npm run main` to see how accurately your prompt meets a set of expectations.
+- Use GPT-4 to assert that its own response meets a set of expectations
+- Store responses in source to increase test speed and save money
+
+## Playground
+
+Clone this repo, experiment with the values in `index.ts`, then run `npm run main` to see how accurately your prompt meets a set of expectations. Ensure you have an environment variable set up for `OPENAI_API_KEY` and have access to GPT-4 via OpenAI's API.
 
 The arguments for `checkAccuracy` are:
 
