@@ -1,12 +1,12 @@
-import { shaFor } from "./shaFor";
+import { hash } from "./hash";
 
-describe("shaFor", () => {
+describe("hash", () => {
   describe("when given the same messages", () => {
     it("returns the same string", () => {
       const messages = [{ role: "user" as const, content: "Hello" }];
 
-      const val1 = shaFor(messages);
-      const val2 = shaFor(messages);
+      const val1 = hash(messages);
+      const val2 = hash(messages);
 
       expect(val1).toEqual(String(val1));
 
@@ -21,8 +21,8 @@ describe("shaFor", () => {
       const messages1 = [{ role: "user" as const, content: "Hello" }];
       const messages2 = [{ role: "user" as const, content: "World" }];
 
-      const val1 = shaFor(messages1);
-      const val2 = shaFor(messages2);
+      const val1 = hash(messages1);
+      const val2 = hash(messages2);
 
       expect(val1).toEqual(String(val1));
       expect(val2).toEqual(String(val2));
