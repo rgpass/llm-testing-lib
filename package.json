@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "openai": "^4.13.0",
     "ts-node": "^10.9.1",
     "vitest": "^0.34.6"
   }
